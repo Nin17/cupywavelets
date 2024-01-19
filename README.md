@@ -1,0 +1,2 @@
+# cupywavelets
+PyWavelets with CuPy
