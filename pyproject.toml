@@ -1,0 +1,27 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools>=61.0"]
+
+[project]
+name = 'cupywt'
+version = '0.1.0'
+description = 'A CuPy implementation of the Wavelet Transform'
+readme = 'README.md'
+license = {file = 'LICENSE'}
+authors = [{name = 'Chris Ninham', email = 'christopher.ninham@creatis.insa-lyon.fr'},]
+dependencies = ["scipy", "numpy"]
+# TODO add cupy instead of scipy & numpy
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+]
+
+
+[project.urls]
+"Homepage" = "https://github.com/Nin17/cupywt"
+"Bug Tracker" = "https://github.com/Nin17/cupywt/issues"
+
+
+# [tool.setuptools.packages.find]
+# include = ["mbipy*"]
